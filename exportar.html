@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Exportar / integración — BERCONT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">
+
+<!-- Estilos (el orden importa: responsive.css va al final) -->
+<link rel="stylesheet" href="css/tema.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/componentes.css">
+<link rel="stylesheet" href="css/inicio.css">
+<link rel="stylesheet" href="css/formularios.css">
+<link rel="stylesheet" href="css/indicadores.css">
+<link rel="stylesheet" href="css/grafica.css">
+<link rel="stylesheet" href="css/exportar.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="exportar">
+<div id="app">
+  <header class="top">
+    <div class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="10" height="7" rx="1.5"/><rect x="18" y="4" width="10" height="7" rx="1.5"/><rect x="10" y="19" width="10" height="7" rx="1.5"/><path d="M12 7.5h6M23 11v4.5H15V19M7 11v4.5h8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><b>BERCONT</b><small>Process Mapping &amp; Diagnostic Tool</small></div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Módulos"></nav>
+    <div class="grow"></div>
+    <span id="savestate" class="savestate"></span>
+    <button class="btn ghost sm" id="themeBtn" type="button" title="Cambiar tema">Tema</button>
+  </header>
+  <main id="main" tabindex="-1"></main>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- Librería externa: exportación a Excel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<!-- Núcleo común a todas las páginas -->
+<script src="js/utilidades.js"></script>
+<script src="js/esquema.js"></script>
+<script src="js/db.js"></script>
+<script src="js/semilla.js"></script>
+<script src="js/ui-estado.js"></script>
+<script src="js/dialogos.js"></script>
+<script src="js/listas.js"></script>
+<script src="js/archivos.js"></script>
+<script src="js/router.js"></script>
+<script src="js/acciones.js"></script>
+
+<!-- Propio de esta página -->
+<script src="js/vistas/exportar.js"></script>
+
+<!-- Arranque (siempre al final) -->
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Tema: variables de color (claro / oscuro) */
+:root{
+  --bg:#F1F4F7; --surface:#FFFFFF; --surface2:#F7F9FB; --ink:#152030; --muted:#586677; --dim:#8593A3;
+  --line:#D5DCE4; --line2:#E6EBF0; --brand:#173B63; --brand-ink:#FFFFFF; --brand-soft:#E4ECF5; --focus:#2F6FE0;
+  --wait:#A85F00; --wait-bg:#FCEFD6; --rework:#B0261B; --rework-bg:#FCE6E3; --xfer:#5A3EB2; --xfer-bg:#EDE8FA;
+  --manual:#1B5CA5; --manual-bg:#E3EEF9; --ok:#1B7443; --ok-bg:#E1F3E8; --edge:#7C8998;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light; accent-color:var(--brand);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F151C; --surface:#16202A; --surface2:#1B2733; --ink:#E5EAF0; --muted:#9AA7B5; --dim:#6F7E8E;
+    --line:#2B3947; --line2:#223040; --brand:#6BA6E6; --brand-ink:#08121C; --brand-soft:#1B2E44; --focus:#6EA0FF;
+    --wait:#F0B455; --wait-bg:#3A2D13; --rework:#FF8B7E; --rework-bg:#3B1E1B; --xfer:#B9A2FF; --xfer-bg:#2A2349;
+    --manual:#82B9F2; --manual-bg:#173250; --ok:#72D19C; --ok-bg:#163629; --edge:#7E8D9D;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F151C; --surface:#16202A; --surface2:#1B2733; --ink:#E5EAF0; --muted:#9AA7B5; --dim:#6F7E8E;
+  --line:#2B3947; --line2:#223040; --brand:#6BA6E6; --brand-ink:#08121C; --brand-soft:#1B2E44; --focus:#6EA0FF;
+  --wait:#F0B455; --wait-bg:#3A2D13; --rework:#FF8B7E; --rework-bg:#3B1E1B; --xfer:#B9A2FF; --xfer-bg:#2A2349;
+  --manual:#82B9F2; --manual-bg:#173250; --ok:#72D19C; --ok-bg:#163629; --edge:#7E8D9D;
+  color-scheme:dark;
+}
+/* Graph: tokens café para "falta levantar" (nuevo) */
+:root{--gap:#7B4B22;--gap-bg:#F3E6D8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--gap:#D9A877;--gap-bg:#3A2A1C}}
+:root[data-theme="dark"]{--gap:#D9A877;--gap-bg:#3A2A1C}
+/* Modelador BPMN: trazo de tareas, lienzo con cuadrícula y paleta */
+:root{--task:#3B4A5C;--canvas:#F6F8FA;--grid:#C9D2DC;--chrome:#E9EEF3;--chrome-ink:#2A3747;--sel-bg:#D6E4FA}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--task:#AEBACA;--canvas:#121A23;--grid:#2A3846;--chrome:#121B24;--chrome-ink:#C9D3DE;--sel-bg:#1E3556}}
+:root[data-theme="dark"]{--task:#AEBACA;--canvas:#121A23;--grid:#2A3846;--chrome:#121B24;--chrome-ink:#C9D3DE;--sel-bg:#1E3556}

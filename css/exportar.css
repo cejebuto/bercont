@@ -1,0 +1,16 @@
+/* Export */
+.exgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px;margin:8px 0 14px}
+.exgrid label{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:var(--surface);cursor:pointer}
+.exgrid label small{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums}
+.exgrid input,.radios input{accent-color:var(--brand)}
+.exgrid label:hover{border-color:var(--dim)}
+.exgrid label:has(input:checked){border-color:var(--brand);background:var(--brand-soft)}
+.exgrid label.zero{color:var(--dim)}
+.exset{border:0;margin:0;padding:0;min-width:0}
+.exset legend{font-size:12.5px;font-weight:600;color:var(--muted);padding:0;margin:4px 0 0}
+.radios{display:flex;gap:16px;flex-wrap:wrap;margin:8px 0 14px}
+.radios label{display:flex;gap:6px;align-items:center}
+.radios label:has(input:disabled){color:var(--dim);cursor:not-allowed}
+.exactions{display:flex;gap:8px;flex-wrap:wrap}
+.exreset{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line2)}
+.exreset .muted{font-size:12.5px;margin-right:auto}
